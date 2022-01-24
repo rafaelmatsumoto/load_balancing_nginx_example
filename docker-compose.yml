@@ -6,8 +6,6 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./webapp:/etc/nginx/webapp
-      - ./images:/etc/images
 
   app:
     build: .
